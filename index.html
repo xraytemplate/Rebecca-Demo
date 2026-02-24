@@ -82,6 +82,11 @@
 			animation-play-state: paused;
 		}
 		
+		.StatusBadge {
+		    margin-top: 20px;
+		    margin-bottom: -15px;
+		}
+		
         .tab-inactive { 
             color: #64748b; 
             font-weight: 500;
@@ -132,6 +137,16 @@
                 
                 <!-- Status Badge -->
                 <span class="bg-blue-600 text-white px-5 py-1.5 rounded-custom text-sm font-bold shadow-sm w-full" data-translate="status_active">فعال</span>
+                
+                
+                <div class="mt-2 StatusBadge flex justify-center">
+                        <div class="inline-flex items-center justify-center gap-1.5 bg-white border border-gray-100 shadow-sm px-10 py-1.5 rounded-lg text-[12px] font-bold text-gray-700">
+                            <span class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_6px_rgba(34,197,94,0.7)] relative">
+                                <span class="absolute inline-flex w-full h-full rounded-full opacity-75 animate-ping bg-green-400"></span>
+                            </span>
+                            <span data-translate="status_online">آنلاین</span>
+                        </div>
+                </div>
             </div>
 
             <!-- Left Column -> 4 Stats Boxes -->
@@ -322,7 +337,9 @@
                 btn_download: "دانلود",
                 btn_import: "وارد کردن",
                 btn_tutorial: "مشاهده ویدئو آموزشی",
-                toast_copied: "کپی شد!"
+                toast_copied: "کپی شد!",
+                status_online: "آنلاین",
+                status_offline: "آفلاین"
             },
             en: {
                 sub_username: "Username",
@@ -346,7 +363,9 @@
                 btn_download: "Download",
                 btn_import: "Import",
                 btn_tutorial: "Watch Tutorial",
-                toast_copied: "Copied!"
+                toast_copied: "Copied!",
+                status_online: "Online",
+                status_offline: "Offline"
             }
         };
 
